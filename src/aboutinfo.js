@@ -1,7 +1,9 @@
 import './css/styles.css';
 import './css/stylesforproject.css';
 import './css/hovereffect.css';
-import dp from './img/0.jpg'
+import instagram from './img/instagram.png';
+import git from './img/git.png';
+import ln from './img/ln.png';
 
 
 const aboutInfoShort =  function() {
@@ -15,10 +17,9 @@ const aboutInfoShort =  function() {
     </h1>
     </tr>
   <tr>
-  <a style={{ color: "black", fontSize: "14px", display: 'inline', padding: "0.3em 0.6em 0.2em", textAlign: "center", borderRadius: "0.65em", backgroundColor: "#eee", fontFamily: "Cuprumm, sans-serif", textDecoration: "none"}} 
-  href="https://www.rutgers.edu/">git</a>
-  <a style={{color: "black", fontSize: "14px", margin: 15, display: 'inline', padding: "0.3em 0.6em 0.2em", textAlign: "center", borderRadius: "0.65em", backgroundColor: "#eee", fontFamily: "Cuprumm, sans-serif",textDecoration: "none"}} 
-  href="https://www.rutgers.edu/">linkedin</a>
+  {/* <a href="https://www.instagram.com/rizhkhan/"><img src={instagram} width="27" height="27" /></a>
+          <a href="https://github.com/rizhkh"><img class="icons" src={git} width="27" height="27" /></a>
+          <a href="https://www.linkedin.com/in/rizhkh/"><img src={ln} width="27" height="27" /></a>   */}
 
   </tr>
   </td>

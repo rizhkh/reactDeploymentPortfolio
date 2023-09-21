@@ -4,7 +4,13 @@ import './css/hovereffect.css';
 import fewProjects from "./project_min";
 import aboutInfoShort from "./aboutinfo";
 import dp from './img/0.jpg'
+import instagram from './img/instagram.png';
+import git from './img/git.png';
+import ln from './img/ln.png';
 
+import {Link } from "react-router-dom";
+  
+  import projectPage from "./projectPage";
 
 const aboutMeStatement =  function() {
   return<>
@@ -23,29 +29,59 @@ const aboutMeStatement =  function() {
       {aboutInfoShort()}
       
       <p className="paragraphFont">
-      I'm a Software Engineer based out of Greater New York City Area. 
-      I graduated from 
-      <a style={{color: "white", fontSize: "14px"}} className="label rt Rutgers" href="https://www.rutgers.edu/">Rutgers University</a> with a 
-      degree in Computer Science.
-      I love learning and working with new open source technologies, and I am particularly interested in full-stack, backend and AI.
-      Please check out my 
-      <a style={{color: "white", fontSize: "14px"}}  className="label Sun SB" href="projects.html">Projects</a>
-      page for some of the cool stuff I've built over the years and technologies I've used building them.
+
+      I'm a Full-Stack Engineer located in the Greater New York City Area. 
+      I approach problem-solving with enthusiasm, backed by a strategic and analytical mindset. 
+      My experience spans diverse domains, including Backend development, Full-stack, Data, and Artificial Intelligence.
+      <br /><br />
+
+      My passion for software is a driving force, and I thrive on continuous learning, particularly when it involves embracing cutting-edge open-source technologies. Currently, I am actively expanding my expertise in full-stack development and AI.
+      <br /><br />
+      To get a closer look at the exciting projects I've undertaken and the technologies I've harnessed throughout my journey, I encourage you to explore my <a style={{color: "white", fontSize: "14px"}}  className="label Sun SB" href="projects.html">Projects</a> page.
+
       </p>
       <br />
       {clickAbleButtons()}
+      <footer style={{
+            color: "black",
+            padding: "10px",
+            position: "fixed",
+            bottom: "0",
+            width: "100%"
+            }}>
+        ©2023 Rizwan 
+        <a href="https://www.instagram.com/rizhkhan/"><img src={instagram} width="27" height="27" /></a>
+          <a href="https://github.com/rizhkh"><img class="icons" src={git} width="27" height="27" /></a>
+          <a href="https://www.linkedin.com/in/rizhkh/"><img src={ln} width="27" height="27" /></a>  
+    </footer>
       </div>
 
 
     <div style={{ 
   padding: "2%"
   }}>
-      <div style={{justifyContent:'right'}}>
-      <a style={{ color: "black", fontSize: "14px", display: 'inline', padding: "0.3em 0.6em 0.2em", textAlign: "center", borderRadius: "0.65em", backgroundColor: "#eee", fontFamily: "Cuprumm, sans-serif", textDecoration: "none"}} 
-  href="https://www.rutgers.edu/">Projects</a>
+      <div style={{justifyContent:'right', padding: "1%"}}>
+      {/* <Link to="/page2"> */}
+      <a 
+        style={{
+        color: "white", 
+        fontSize: "14px",  
+        boxShadow: "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px"}}  
+        className="label Sun SB" href="projects.html">Projects</a>
+        {/* </Link> */}
+      <a 
+        style={{
+        color: "white", 
+        fontSize: "14px",  
+        boxShadow: "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px"}}  
+      className="label Sun SB" href="projects.html">Resume</a>
+            <a 
+        style={{
+        color: "white", 
+        fontSize: "14px",  
+        boxShadow: "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px"}}  
+      className="label Sun SB" href="projects.html">Lets Talk!</a>
 
-  <a style={{color: "black", fontSize: "14px", margin: 15, display: 'inline', padding: "0.3em 0.6em 0.2em", textAlign: "center", borderRadius: "0.65em", backgroundColor: "#eee", fontFamily: "Cuprumm, sans-serif",textDecoration: "none"}} 
-  href="https://www.rutgers.edu/">Resume</a>
       </div>
       {fewProjects()}
     </div>
