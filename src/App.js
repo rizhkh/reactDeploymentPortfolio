@@ -1,27 +1,35 @@
+import {BrowserRouter, Routes, Route, Link} from 'react-router-dom';
 
-// import './App.css';
 import './css/styles.css';
 import './css/stylesforproject.css';
-import dp from './img/0.jpg'
-import aboutMeStatement from "./functionality";
+
+import Project from "./pages/Project";
+import Home from "./pages/Home";
 
 
 
 function App() {
   return (
-    // <div className="App">
-    //   <header className="App-header">
-      
-      <div>
+    <BrowserRouter>
         <div className="mainCont">
           <div className="blockPos blockPosFont" >
-            {aboutMeStatement()}
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/Projects" element={<Project />} />
+            </Routes>
           </div>
         </div>
-      </div>
-        
-    //   </header>
-    // </div>
+
+
+    
+      {/* <div>
+        <div className="mainCont">
+          <div className="blockPos blockPosFont" >
+            {AboutMeStatement()}
+          </div>
+        </div>
+      </div> */}
+      </BrowserRouter>
   );
 }
 
