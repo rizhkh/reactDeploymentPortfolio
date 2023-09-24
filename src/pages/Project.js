@@ -3,18 +3,14 @@ import '../css/stylesforproject.css';
 import '../css/hovereffect.css';
 
 export default function Project(){
-
+  const url = "reactDeploymentPortfolio"
 
   return<>
   
   <div class="topnav">
     <div class="topnavlink">
       <div class="linkBox">
-        <a href="res1.pdf">Resume</a>
-      </div>
-
-      <div class="linkBox">
-        <a href="/">About</a>
+        <a href="reactDeploymentPortfolio/">About</a>
       </div>
     </div>
 

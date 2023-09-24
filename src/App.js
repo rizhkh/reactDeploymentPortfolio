@@ -9,13 +9,14 @@ import Home from "./pages/Home";
 
 
 function App() {
+  const url = "reactDeploymentPortfolio"
   return (
     <BrowserRouter>
         <div className="mainCont">
           <div className="blockPos blockPosFont" >
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/Projects" element={<Project />} />
+              <Route path= "reactDeploymentPortfolio/" element={<Home />} />
+              <Route path="reactDeploymentPortfolio/Projects" element={<Project />} />
             </Routes>
           </div>
         </div>
