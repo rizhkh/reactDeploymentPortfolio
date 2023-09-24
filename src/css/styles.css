@@ -453,3 +453,9 @@ a:hover {
 linkProj {
   color: black;
 }
+
+tr.tr-hover-class:hover {
+  background: #e7ecf6 !important;
+  cursor: pointer;
+
+}
