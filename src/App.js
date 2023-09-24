@@ -20,15 +20,6 @@ function App() {
           </div>
         </div>
 
-
-    
-      {/* <div>
-        <div className="mainCont">
-          <div className="blockPos blockPosFont" >
-            {AboutMeStatement()}
-          </div>
-        </div>
-      </div> */}
       </BrowserRouter>
   );
 }
