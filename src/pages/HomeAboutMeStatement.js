@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom';
 import '../css/styles.css';
 import '../css/stylesforproject.css';
 import '../css/hovereffect.css';
@@ -12,7 +13,7 @@ export default function HomeAboutMeStatement(){
   <br /><br />
   To get a closer look at some exciting projects I've done over the years and the technologies I've used 
   throughout my journey, I encourage you to check out my 
-  <a style={{color: "white", fontSize: "14px"}}  className="label Sun SB" href="/Projects">Projects</a> page.
+  <Link style={{color: "white", fontSize: "14px"}}  className="label Sun SB" to="/Projects">Projects</Link> page.
 </p>
   </>;
 }

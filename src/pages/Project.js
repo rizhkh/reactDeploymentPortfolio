@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom';
 import '../css/styles.css';
 import '../css/stylesforproject.css';
 import '../css/hovereffect.css';
@@ -9,12 +10,9 @@ export default function Project(){
   
   <div class="topnav">
     <div class="topnavlink">
-      <div class="linkBox">
-        <a href="res1.pdf">Resume</a>
-      </div>
 
       <div class="linkBox">
-        <a href="/">About</a>
+        <Link to="/">Home</Link>
       </div>
     </div>
 

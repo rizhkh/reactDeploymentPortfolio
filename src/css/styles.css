@@ -469,6 +469,7 @@ a.namehover {
     black 50%,
     #000 50%
   );
+  color: '#565957';
   background-size: 200% 100%;
   background-position: -100%;
   display: inline-block;
@@ -477,7 +478,12 @@ a.namehover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
+
   
+}
+
+a.namehove:link {
+color: #565957;
 }
 
 a.namehover:before{
@@ -489,6 +495,7 @@ a.namehover:before{
   width: 0;
   height: 3px;
   transition: all 0.3s ease-in-out;
+  color: '#565957';
 }
 
 a.namehover:hover {
