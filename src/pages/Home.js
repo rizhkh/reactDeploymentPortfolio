@@ -32,12 +32,24 @@ export default function Home() {
       </div>
     </div>
 
-    <div class="topnavdetail">
+    {/* <div class="topnavdetail">
         <div class="label label-tab" style={{backgroundColor: 'transparent'}}>
-          <text style={{ color: 'gray'}}>R<text style={{ fontSize:9}}>IZWAN </text></text>
-          K<text style={{ fontSize:9}}>HAN ©2023</text>
+
+        <a className="namehover" href="#" style={{fontFamily: "Open Sans,sans-serif"}}>R</a>
+            <a className="namehover" href="#"><text style={{ fontSize:9, fontFamily: "Open Sans,sans-serif"}}>I</text></a>
+            <a className="namehover" href="#"><text style={{ fontSize:9, fontFamily: "Open Sans,sans-serif"}}>Z</text></a>
+            <a className="namehover" href="#"><text style={{ fontSize:9, fontFamily: "Open Sans,sans-serif"}}>W</text></a>
+            <a className="namehover" href="#"><text style={{ fontSize:9, fontFamily: "Open Sans,sans-serif"}}>A</text></a>
+            <a className="namehover" href="#"><text style={{ fontSize:9, fontFamily: "Open Sans,sans-serif"}}>N</text></a>
+            <text> </text>
+            <a className="namehover" href="#" style={{fontFamily: "Open Sans,sans-serif"}}>K</a>
+            <a className="namehover" href="#"><text style={{ fontSize:9, fontFamily: "Open Sans,sans-serif"}}>H</text></a>
+            <a className="namehover" href="#"><text style={{ fontSize:9, fontFamily: "Open Sans,sans-serif"}}>A</text></a>
+            <a className="namehover" href="#"><text style={{ fontSize:9, fontFamily: "Open Sans,sans-serif"}}>N</text></a>
+
+          <text style={{ fontSize:9}}> ©2023</text>
           </div>
-    </div>
+    </div> */}
 
   </div>
 
@@ -54,7 +66,7 @@ export default function Home() {
     </div>
 
     <div style={{ padding: "2%"}}>
-      <div style={{ backgroundColor: 'yellow', position: "relative"}}>
+      <div style={{position: "relative"}}>
         <Links />
       </div>
       <br />   

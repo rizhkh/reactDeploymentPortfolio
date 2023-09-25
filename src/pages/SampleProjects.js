@@ -23,9 +23,7 @@ export default function SampleProjects() {
               </h3>
             <p>An autonomous A.I. agent designed to play a game of Minesweeper</p>
             <div class="labelProject label-System" style={{ fontSize: '12px', margin: 2}}>Python</div>
-            <div class="labelProject label-System" style={{ fontSize: '12px', margin: 2}}>Data</div>
-
-            <div class="labelProject label-System" style={{ fontSize: '12px', margin: 2}}>Data</div>
+            <div class="labelProject label-System" style={{ fontSize: '12px', margin: 2}}>A.I & Data</div>
           </div>
         </a>
 

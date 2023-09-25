@@ -4,6 +4,8 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&family=Roboto:wght@400;900&display=swap');
+
 
 .icons {
   color: red;
@@ -186,8 +188,8 @@ a.IP {
 }
 
 .paragraphFont {
-  font-family: 'EB Garamond', serif;
-  font-size: 20px;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 18px;
   font-weight: 500;
   line-height: 30px;
   line-height: 30px;
@@ -458,4 +460,41 @@ tr.tr-hover-class:hover {
   background: #e7ecf6 !important;
   cursor: pointer;
 
+}
+
+a.namehover {
+  background-image: linear-gradient(
+    to right,
+    #f8f8f8,
+    black 50%,
+    #000 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+a.namehover:before{
+  content: '';
+  background: grey;
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+a.namehover:hover {
+ background-position: 0;
+}
+
+a.namehover:hover::before{
+  width: 100%;
 }

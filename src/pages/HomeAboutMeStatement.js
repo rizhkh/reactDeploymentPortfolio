@@ -4,20 +4,15 @@ import '../css/hovereffect.css';
 
 export default function HomeAboutMeStatement(){
   return<>
-<p className="paragraphFont">
-  Hi, I'm Rizwan 👋 and i'm a Full-Stack Engineer located in the Greater New York City Area. 
-  I approach problem-solving with enthusiasm, backed by a strategic and analytical mindset. 
-  My experience spans diverse domains, including Backend development, Full-stack, Data, and 
+<p className="paragraphFont" style={{width: '90%'}}>
+  Hi, I'm Rizwan 👋 and i'm a <b style={{color: '#565957'}}>Full-Stack Engineer</b>.I like bringing
+  ideas to life via <b style={{color: '#565957'}}>code</b> + <b style={{color: '#565957'}}>design</b>. I approach problem-solving with enthusiasm, backed by a strategic and analytical mindset. 
+  My experience spans diverse domains, including back end, front end, Full-stack and 
   Artificial Intelligence.
-  <br /><br />
-
-  My passion for software is a driving force, and I thrive on continuous learning, particularly 
-  when it involves embracing cutting-edge open-source technologies. Currently, I am actively 
-  expanding my expertise in full-stack development and AI.
   <br /><br />
   To get a closer look at some exciting projects I've done over the years and the technologies I've used 
   throughout my journey, I encourage you to check out my 
-  <a style={{color: "white", fontSize: "14px"}}  className="label Sun SB" href="reactDeploymentPortfolio/Projects">Projects</a> page.
+  <a style={{color: "white", fontSize: "14px"}}  className="label Sun SB" href="/Projects">Projects</a> page.
 </p>
   </>;
 }

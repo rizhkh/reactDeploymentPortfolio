@@ -19,7 +19,7 @@ export default function SkillStackClickAbleButtons()
     </div> 
 
     <div class="btnlabel btn btn-5" 
-    style={{ boxSizing: "border-box", width: '95px', display: "flex", justifyContent: "center", alignItems: "center"}}>
+    style={{ boxSizing: "border-box", display: "flex", justifyContent: "center", alignItems: "center"}}>
         <img style={{ objectFit: 'cover',height:"35px",width:"35px",padding: 2}}
         src="https://img.icons8.com/?size=512&id=qV-JzWYl9dzP&format=png" 
         alt="Icon from icons8.com" 

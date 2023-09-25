@@ -2,15 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
 
-.paragraphFont {
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-  /* font-weight: 500;
-  line-height: 30px;
-  line-height: 30px;
-  margin: 0 0 20px; */
-  color: #333;
-}
 
 .headerFont {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -235,6 +226,14 @@ a.linkProj:hover {
 
   color: #7e909d;
   background-color: #e7ecf0;
+  border: 0.8px solid #95ABBB;
+}
+
+.labelProject.label-code {
+  font-family: 'Lato', sans-serif;
+
+  color: #7e909d;
+  background-color: #d6eeff;
   border: 0.8px solid #95ABBB;
 }
 
