@@ -1,3 +1,5 @@
+import {Link} from 'react-router-dom';
+
 import '../css/styles.css';
 import '../css/stylesforproject.css';
 import '../css/hovereffect.css';
@@ -50,11 +52,11 @@ export default function SampleProjects() {
         
         <div style={{width:"40px", display: 'in-line'}}>  
         
-        <a href="/Projects" class="linkBoxHeading linkProj">
+        <Link to="/Projects" class="linkBoxHeading linkProj">
           <div >
             <div class="labelProject label-System" style={{ fontSize: '12px', margin: 2}}>See More <b>→</b></div>
           </div>
-        </a>
+          </Link>
         </div>
 </>;
 }
