@@ -1,12 +1,26 @@
 import '../css/styles.css';
 import '../css/stylesforproject.css';
 import '../css/hovereffect.css';
+import dp from '../img/0.jpg'
 
 export default function HeaderNameInfo(){
   return <>
   <table style= {{width:"100%"}}>
     <tr>
       <td>
+        <h1 class="headerOne headerFont" 
+        >
+          <text style={{ borderBottom: "3px solid #eee"}} >
+            <text style={{fontSize:38}}>R</text>
+            <text style={{fontSize:35}}>izwan</text>
+            <text style={{fontSize:38}}> K</text>
+            <text style={{fontSize:35}}>han</text>
+          <text style={{fontSize:8}}> @ </text>
+          <text style={{fontSize:16, color: '#565957'}}> Full-Stack Engineer</text>
+          </text>
+        </h1>
+      </td>
+      {/* <td>
         <tr>                  
           <h1 style={{ fontFamily: "Roboto Slab, serif", paddingBottom: "1px", 
           margin: "5px 0 1px", borderBottom: "3px solid #eee", width: '100%'}}>
@@ -32,7 +46,7 @@ export default function HeaderNameInfo(){
           </text>
           </h1>
         </tr>
-      </td>
+      </td> */}
     </tr>
   </table>
   </>;

@@ -92,6 +92,7 @@ a.IP {
   margin-top: 80px;
 }
 
+/* This will keep the div in place when screen gets resized. without this the text moves upward on resizing */
 .mainCont {
   
   /* position: absolute;
@@ -108,43 +109,6 @@ a.IP {
   width: 80%;
   height: 400px;
   padding: 30px;
-  /* border: 3px solid green; */
-}
-
-.cvCont {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  left: 50%;
-  right: 50%;
-  width: 80%;
-  height: 100%;
-  padding: 30px;
-  /* border: 3px solid green; */
-}
-
-.cvContTools {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  left: 50%;
-  right: 50%;
-  width: 30%;
-  height: 100%;
-  padding: 30px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-  /* box-shadow:
-  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-  0 12.5px 10px rgba(0, 0, 0, 0.06),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 100px 80px rgba(0, 0, 0, 0.12); */
-
-  border-radius:30px 30px 30px 30px;
-
   /* border: 3px solid green; */
 }
 
@@ -181,29 +145,10 @@ a.IP {
   margin: 0 auto;
 }
 
-.iconBlock {
-  align-items: center;
-  float: right;
-  /* border: 3px solid blue; */
-}
-
 .paragraphFont {
-  font-family: 'Open Sans',sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 30px;
-  line-height: 30px;
-  margin: 0 0 20px;
-  width: 100%;
-  color: #333;
-}
-
-.cvPara {
   font-family: 'EB Garamond', serif;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 30px;
-  line-height: 30px;
+  font-size: 20px;
+  line-height: 35px;
   margin: 0 0 20px;
   width: 100%;
   color: #333;
@@ -215,24 +160,7 @@ a.IP {
   font-size: 32px;
   padding-bottom: 6px;
   margin: 5px 0 20px;
-  border-bottom: 3px solid #eee;
-}
-
-.headerOne {
-  width: 100%;
-}
-
-.headerOneCV {
-  width: 20px;
-  vertical-align: top;
-}
-
-.headerTwo {
-  width: 95%;
-}
-
-.border {
-  border-bottom: 3px solid black;
+  /* border-bottom: 3px solid #eee; */
 }
 
 a.SB {
@@ -274,176 +202,6 @@ a:hover {
   margin: 5px;
 }
 
-.label.label-tab {
-  font-family: 'Roboto', sans-serif;
-  background-color: #FFE07A;
-}
-
-.label {
-  display: inline;
-  padding: 0.3em 0.6em 0.2em;
-  font-size: 75%;
-  font-weight: 700;
-  line-height: 1;
-  color: black;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: 0.25em;
-}
-
-.tab {
-  display: inline-block;
-  margin-left: 40px;
-}
-
-/*  $$$$$$$$   */
-@media screen and (max-height: 450px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-}
-
-@media screen and (max-height: 450px) {
-  .topnavlink {
-    padding-top: 15px;
-  }
-}
-::-webkit-scrollbar {display:none;}
-
-.project_tab_desc {
-  overflow: scroll;
-  width: 20%; 
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-  border-radius: 5px;
-}
-
-.label {
-  display: inline;
-  padding: 0.3em 0.6em 0.2em;
-  font-size: 75%;
-  font-weight: 700;
-  line-height: 1;
-  color: black;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: 0.25em;
-}
-
-.label.label-link {
-  font-family: 'Roboto', sans-serif;
-  background-color: #F1F3F4;
-}
-
-.label.label-default {
-  font-family: 'Roboto', sans-serif;
-  background-color: #EAF6F6;
-}
-
-.label.label-python {
-  font-family: 'Roboto', sans-serif;
-  background-color: #FFE07A;
-}
-
-.label.label-java {
-  font-family: 'Roboto', sans-serif;
-  background-color: #4F5A5A;
-  color: white;
-}
-
-.label.label-js {
-  font-family: 'Roboto', sans-serif;
-  background-color: #6FBB4F;
-  color: white;
-}
-
-.label.label-c {
-  font-family: 'Roboto', sans-serif;
-  background-color: #E52F36;
-  color: white;
-}
-
-.label.label-gradle {
-  font-family: 'Roboto', sans-serif;
-  background-color: #02303A;
-  color: white;
-}
-
-.label.label-ml {
-  font-family: 'Roboto', sans-serif;
-  background-color: #EAF6F6;
-}
-
-.label.label-tab {
-  font-family: 'Roboto', sans-serif;
-  background-color: #FFE07A;
-}
-
-.label.label-AI {
-  font-family: 'Lato', sans-serif;
-  font-size: 10px;
-  color: #F36E6E;
-  background-color: #EFBEBE;
-  border: 0.8px solid #F36E6E;
-}
-
-.label.label-ML {
-  font-family: 'Lato', sans-serif;
-  font-size: 10px;
-  color: #40AF5D;
-  background-color: #B0E1BD;
-  border: 0.8px solid #40AF5D;
-}
-
-.label.label-Data {
-  font-family: 'Lato', sans-serif;
-  font-size: 10px;
-  color: #143D81;
-  background-color: #AEC0DD;
-  border: 0.8px solid #143D81;
-}
-
-.label.label-Search {
-  font-family: 'Lato', sans-serif;
-  font-size: 10px;
-  color: #AE6476;
-  background-color: #EEBAC7;
-  border: 0.8px solid #AE6476;
-}
-
-.label.label-App {
-  font-family: 'Lato', sans-serif;
-  font-size: 10px;
-  color: #5599CA;
-  background-color: #BADBF2;
-  border: 0.8px solid #5599CA;
-}
-
-.label.label-Code {
-  font-family: 'Lato', sans-serif;
-  font-size: 10px;
-  color: #30A05D;
-  background-color: #B2F0CB;
-  border: 0.8px solid #30A05D;
-}
-
-.label.label-Web {
-  font-family: 'Lato', sans-serif;
-  font-size: 10px;
-  color: #4F8D41;
-  background-color: #C5E3BE;
-  border: 0.8px solid #4F8D41;
-}
-
-.label.label-System {
-  font-family: 'Lato', sans-serif;
-  font-size: 10px;
-  color: #78281F;
-  background-color: #EC7063;
-  border: 0.8px solid #78281F;
-}
-
 .linkBoxHeading {
   padding-right: 20px;
   padding-right: 20px;
@@ -452,9 +210,6 @@ a:hover {
   color: black;
 }
 
-linkProj {
-  color: black;
-}
 
 tr.tr-hover-class:hover {
   background: #e7ecf6 !important;
@@ -505,3 +260,39 @@ a.namehover:hover {
 a.namehover:hover::before{
   width: 100%;
 }
+
+/* This will keep two divs side by side */
+.containDiv
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* This will keep two divs side by side */
+.placeDivSideBySide
+{
+  width: 50%;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+  .text {
+      font-size: 16px; /* Decrease font size for smaller screens */
+      margin: 10px; /* Adjust margin for spacing */
+  }
+}
+
+/*  $$$$$$$$   */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .topnavlink {
+    padding-top: 15px;
+  }
+}
+::-webkit-scrollbar {display:none;}
+

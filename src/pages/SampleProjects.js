@@ -6,22 +6,22 @@ import git from '../img/git.png';
 
 export default function SampleProjects() {
   return   <>    
-      <div>
-
         <a href="https://github.com/rizhkh/mswp" class="linkBoxHeading linkProj">
           <div class="project_tab_desc" 
-          style={{float:"left", padding: "25px", margin:"7px", width:"350px", padding:18}}>
+          style={{padding: "25px", margin:"7px", width:"350px"}}>
             <h3 style={{ fontSize: "14px"}}>
-              <table><tr>
+            <table><tr>
                 <td>
-                Minesweeper (A.I. Playing Minesweeper) 
+                A.I. MineSweeper
                 </td>
                 <td>
-                <a href="https://github.com/rizhkh/mswp"><img class="icons" src={git} width="20" height="20" /></a>
+                <a href="https://github.com/rizhkh/mswp">
+                <img class="icons" src={git} width="20" height="20" />
+                  </a>
                 </td>
                 </tr></table>
               </h3>
-            <p>An autonomous A.I. agent designed to play a game of Minesweeper</p>
+            <p className="projectDivFont">A.I. that can play Minesweeper</p>
             <div class="labelProject label-System" style={{ fontSize: '12px', margin: 2}}>Python</div>
             <div class="labelProject label-System" style={{ fontSize: '12px', margin: 2}}>A.I & Data</div>
           </div>
@@ -41,9 +41,8 @@ export default function SampleProjects() {
                 </td>
                 </tr></table>
               </h3>
-            <p>Developed a music player with a friendly graphical user interface</p>
-            <div class="labelProject label-System" style={{ fontSize: '12px', margin: 2}}>Java</div>
-            <div class="labelProject label-System" style={{ fontSize: '12px', margin: 2}}>JavaFX</div>
+            <p className="projectDivFont">Music player with a friendly graphical user interface</p>
+            <div class="labelProject label-System" style={{ fontSize: '12px', margin: 2}}>Java & JavaFX</div>
             <div class="labelProject label-System" style={{ fontSize: '12px', margin: 2}}>JSyn</div>
           </div>
         </a>
@@ -53,12 +52,9 @@ export default function SampleProjects() {
         
         <a href="/Projects" class="linkBoxHeading linkProj">
           <div >
-            <div class="labelProject label-System" style={{ fontSize: '12px', margin: 2}}>See More...</div>
+            <div class="labelProject label-System" style={{ fontSize: '12px', margin: 2}}>See More <b>→</b></div>
           </div>
         </a>
         </div>
-
-
-      </div>
 </>;
 }

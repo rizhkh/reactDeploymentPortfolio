@@ -13,7 +13,7 @@ export default function SkillStackClickAbleButtons()
 
     <div class="btnlabel btn btn-5" 
     style={{ boxSizing: "border-box",display: "flex", justifyContent: "center", alignItems: "center"}}>
-        <img   style={{ objectFit: 'cover',height:"35px",width:"35px",padding: 2}}
+        <img   style={{ objectFit: 'cover',height:"35px",padding: 2}}
         src="https://cdn.iconscout.com/icon/free/png-512/free-aws-1869025-1583149.png?f=avif&w=256" 
         alt="Icon from iconscout.com" title="AWS"/>
     </div> 

@@ -5,15 +5,26 @@ import '../css/hovereffect.css';
 
 export default function HomeAboutMeStatement(){
   return<>
-<p className="paragraphFont" style={{width: '90%'}}>
-  Hi, I'm Rizwan 👋 and i'm a <b style={{color: '#565957'}}>Full-Stack Engineer</b>.I like bringing
-  ideas to life via <b style={{color: '#565957'}}>code</b> + <b style={{color: '#565957'}}>design</b>. I approach problem-solving with enthusiasm, backed by a strategic and analytical mindset. 
-  My experience spans diverse domains, including back end, front end, Full-stack and 
-  Artificial Intelligence.
-  <br /><br />
-  To get a closer look at some exciting projects I've done over the years and the technologies I've used 
-  throughout my journey, I encourage you to check out my 
-  <Link style={{color: "white", fontSize: "14px"}}  className="label Sun SB" to="/Projects">Projects</Link> page.
-</p>
-  </>;
+    <div className="blockPos blockPosFont">
+      <p className="paragraphFont" style={{width: '95%'}}>
+        Hi, I'm Rizwan 👋 and I am a 
+        <i> <b className='headerFont' style={{color: '#565957', fontSize:19}}>Full-Stack Engineer</b></i>.
+        I like bringing
+        ideas to life via 
+        <i> <b className='headerFont' style={{color: '#565957', fontSize:19}}>code </b></i>
+        + 
+        <i> <b className='headerFont' style={{color: '#565957', fontSize:19}}> design</b></i>.
+        I approach problem-solving with enthusiasm, backed by a strategic and analytical mindset. 
+        My experience spans diverse domains, including back end, front end, Full-stack and 
+        Artificial Intelligence.
+        <br /><br />
+        Please check out my 
+        <Link to="/Projects" style={{color: "white", fontSize: "16px", 
+          boxShadow: "0px 0px 3px rgba(0, 0, 0, 0.3)"}}  
+        className="label Sun SB">Projects</Link>page for some of the cool stuff I've built over the years and technologies I've used building them.
+      </p>
+    <br />
+    <br />
+      </div>
+  </>
 }

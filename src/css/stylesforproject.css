@@ -224,7 +224,7 @@ a.linkProj:hover {
 .labelProject.label-System {
   font-family: 'Lato', sans-serif;
 
-  color: #7e909d;
+  color: #577081;
   background-color: #e7ecf0;
   border: 0.8px solid #95ABBB;
 }
@@ -236,6 +236,60 @@ a.linkProj:hover {
   background-color: #d6eeff;
   border: 0.8px solid #95ABBB;
 }
+
+
+.label {
+  display: inline;
+  padding: 0.3em 0.6em 0.2em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  color: black;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25em;
+}
+
+.tab {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+
+.label {
+  display: inline;
+  padding: 0.3em 0.6em 0.2em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  color: black;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25em;
+}
+
+.label.label-link {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F1F3F4;
+}
+
+.label.label-tab {
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFE07A;
+}
+
+
+.label.label-System {
+  font-family: 'Lato', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-size: 10px;
+  color: #266ea0;
+  background-color: #BADBF2;
+  border: 0.8px solid #5599CA;
+}
+
 
 /*  $$$$$$$$   */
 @media screen and (max-height: 450px) {
@@ -262,4 +316,13 @@ a.linkProj:hover {
   color: #5599CA;
   border: 0.8px solid #e2c257;
   background-color: #FFE07A;
+}
+
+.projectDivFont {
+  font-family: 'Open Sans',sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  margin: 0 0 20px;
+  width: 100%;
+  color: #333;
 }
