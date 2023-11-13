@@ -14,7 +14,7 @@ export default function SampleProjects() {
             <h3 style={{ fontSize: "14px"}}>
             <table><tr>
                 <td>
-                A.I. MineSweeper
+                AI Minesweeper
                 </td>
                 <td>
                 <a href="https://github.com/rizhkh/mswp">
