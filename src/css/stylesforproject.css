@@ -319,7 +319,7 @@ a.linkProj:hover {
 }
 
 .projectDivFont {
-  font-family: 'Open Sans',sans-serif;
+  font-family: 'IBM Plex Mono', monospace;
   font-size: 15px;
   line-height: 25px;
   margin: 0 0 20px;

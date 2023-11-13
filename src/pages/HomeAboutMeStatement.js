@@ -8,23 +8,11 @@ export default function HomeAboutMeStatement(){
     <div className="blockPos blockPosFont">
       <p className="paragraphFont" style={{width: '95%'}}>
         Hi, I'm Rizwan 👋 and I am a 
-        
-        <i> <b className='headerFont' style={{color: '#565957', fontSize:19}}>Full-Stack Engineer</b></i>.
+Full-Stack Engineer.
         I like bringing
-        ideas to life using 
-        <Link style={{color: "white", fontSize: "16px"}}  
-        ><i> <b className='headerFont' style={{color: '#565957', fontSize:19}}>
-        <text style={{fontSize:14}}>&lt; </text>
-          code 
-        <text style={{
-          fontSize:12
-        }}> + </text> 
-        design
-        <text style={{fontSize:14}}> &gt;</text></b></i></Link>
-        <br />
-        I approach problem-solving with enthusiasm, backed by a strategic and analytical mindset. 
-        My experience spans diverse domains, including back end, front end, Full-stack and 
-        Artificial Intelligence.
+        ideas to life using  
+        code.
+
         <br /><br />
         Please check out my 
         <Link to="/Projects" style={{color: "white", fontSize: "16px", 

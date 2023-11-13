@@ -23,7 +23,8 @@ export default function SampleProjects() {
                 </td>
                 </tr></table>
               </h3>
-            <p className="projectDivFont">A.I. that can play Minesweeper</p>
+            <p className="projectDivFont">AI capable of playing a game of Minesweeper without using
+any human input for help</p>
             <div class="labelProject label-System" style={{ fontSize: '12px', margin: 2}}>Python</div>
             <div class="labelProject label-System" style={{ fontSize: '12px', margin: 2}}>A.I & Data</div>
           </div>
