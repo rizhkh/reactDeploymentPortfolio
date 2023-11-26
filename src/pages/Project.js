@@ -31,7 +31,9 @@ export default function Project(){
   <table style= {{width:"100%", borderCollapse: 'collapse'}}>
 
     <tr class='tr-hover-class projectBorderBottom' style={{borderBottom: "1px solid #eee"}}
-   onClick={() => { window.location.href = "https://github.com/rizhkh/mswp"; } }
+   onClick={() => { 
+    window.open("https://github.com/rizhkh/mswp", "_blank")
+  } }
     >          
         <td style={{padding: 10}}>AI powered Minesweeper</td> 
         <td style={{padding: 10}}>                          
@@ -41,7 +43,9 @@ export default function Project(){
     </tr>
 
     <tr class='tr-hover-class' style={{borderBottom: "1px solid #eee"}}
-       onClick={() => { window.location.href = "https://github.com/rizhkh/Image-Classifier"; } }>            
+       onClick={() => { 
+        window.open("https://github.com/rizhkh/Image-Classifier", "_blank")
+        } }>            
         <td style={{padding: 10}}>
         Image Classifier
         </td> 
@@ -53,7 +57,9 @@ export default function Project(){
     </tr>
 
     <tr class='tr-hover-class' style={{borderBottom: "1px solid #eee"}}
-       onClick={() => { window.location.href = "https://github.com/rizhkh/mazesearch"; } }>            
+       onClick={() => { 
+        window.open("https://github.com/rizhkh/mazesearch", "_blank")
+        } }>            
         <td style={{padding: 10}}>Navigator</td> 
         <td style={{padding: 10}}>                          
         <div class="label label-System">Python</div>
@@ -61,7 +67,9 @@ export default function Project(){
     </tr>
 
     <tr class='tr-hover-class' style={{borderBottom: "1px solid #eee"}}
-       onClick={() => { window.location.href = "https://github.com/rizhkh/Map-search-Trajectory-plan"; } }>           
+       onClick={() => { 
+        window.open("https://github.com/rizhkh/Map-search-Trajectory-plan", "_blank")
+        } }>           
         <td style={{padding: 10}}>Search (Map)</td> 
         <td style={{padding: 10}}>                          
         <div class="label label-System">Java & Java Swing</div>
@@ -69,7 +77,9 @@ export default function Project(){
     </tr>
 
     <tr class='tr-hover-class' style={{borderBottom: "1px solid #eee"}}
-       onClick={() => { window.location.href = "https://github.com/rizhkh/Socket-programming-Client"; } }>             
+       onClick={() => { 
+        window.open("https://github.com/rizhkh/Socket-programming-Client", "_blank")
+        } }>             
         <td style={{padding: 10}}>Peer2Peer sharing utility</td> 
         <td style={{padding: 10}}>                          
         <div class="label label-System">Java</div>
@@ -78,7 +88,9 @@ export default function Project(){
     </tr>
 
     <tr class='tr-hover-class' style={{borderBottom: "1px solid #eee"}}
-       onClick={() => { window.location.href = "https://github.com/rizhkh/GameOfChess"; } }>             
+       onClick={() => { 
+        window.open("https://github.com/rizhkh/GameOfChess", "_blank")
+        } }>             
         <td style={{padding: 10}}>Chess</td> 
         <td style={{padding: 10}}>                          
         <div class="label label-System" >Chess</div>
@@ -89,7 +101,9 @@ export default function Project(){
     </tr>
 
     <tr class='tr-hover-class' style={{borderBottom: "1px solid #eee"}}
-       onClick={() => { window.location.href = "https://github.com/rizhkh/MusicSongPlaylist"; } }>              
+       onClick={() => { 
+        window.open("https://github.com/rizhkh/MusicSongPlaylist", "_blank") 
+        } }>              
         <td style={{padding: 10}}>Music Player</td> 
         <td style={{padding: 10}}>                          
         <div class="label label-System">JavaFX</div>
@@ -98,7 +112,9 @@ export default function Project(){
     </tr>
 
     <tr class='tr-hover-class' style={{borderBottom: "1px solid #eee"}}
-       onClick={() => { window.location.href = "https://github.com/rizhkh/System-Utility-Malloc-free"; } }>             
+       onClick={() => { 
+        window.open("https://github.com/rizhkh/System-Utility-Malloc-free", "_blank")
+        } }>             
         <td style={{padding: 10}}>System Utilities</td> 
         <td style={{padding: 10}}>                          
         <div class="label label-System">C Language</div>
@@ -106,7 +122,9 @@ export default function Project(){
     </tr>
 
     <tr class='tr-hover-class' style={{borderBottom: "1px solid #eee"}}
-       onClick={() => { window.location.href = "https://github.com/rizhkh/PhotoAlbum"; } }>             
+       onClick={() => { 
+        window.open("https://github.com/rizhkh/PhotoAlbum", "_blank")
+        } }>             
         <td style={{padding: 10}}>Photo Viewer (Photo Storage platform included)</td> 
         <td style={{padding: 10}}>                          
         <div class="label label-System">Java</div>
