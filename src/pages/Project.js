@@ -1,139 +1,82 @@
-import {Link} from 'react-router-dom';
+import React, { useState } from 'react';
 import '../css/styles.css';
 import '../css/stylesforproject.css';
 import '../css/hovereffect.css';
-import SkillStackClickAbleButtons from "../pages/SkillStack";
-
-export default function Project(){
 
 
-  return<>
-  
-  <div class="topnav">
-    <div class="topnavlink">
+const ExpandableSection = ({ org, pos, colorway, children }) => {
+  const [isOpen, setIsOpen] = useState(false);
 
-      <div class="linkBox">
-        <Link to="/">Home</Link>
+  const toggleSection = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div style={{ borderBottom: '1px dashed #ccc', padding: '2px' }}>
+      <div 
+        onClick={toggleSection} 
+        style={{ 
+          cursor: 'pointer', 
+          display: 'flex', 
+          justifyContent: 'space-between', 
+          alignItems: 'center' 
+        }}
+      >
+        <div style={{ display: 'flex', gap: '20px', color: 'black' }}>
+          <span>
+            <div className={colorway}>
+              {org}
+            </div>
+          </span>
+          <span>{pos}</span>
+        </div>
+        <span>
+          {isOpen ? '⌃' : '⌄'}
+        </span>
       </div>
+      {isOpen && (
+        <div style={{ marginTop: '5px', backgroundColor: isOpen ? '#f1f1f4' : 'transparent', borderRadius: '7px' }}>
+          <div style={{ margin: '0', padding: 4 }}>
+            {children}
+          </div>
+        </div>
+      )}
     </div>
+  );
+};
 
-    <div class="topnavdetail">
-        <div class="label label-tab">Projects</div>
-    </div>
+// export default ExpandableSection;
+
+// export default function WorkTable(){
+  export default function Project(){
+  return <>
+  <div >
+
+  <ExpandableSection org={
+  <div style={{ display: 'flex', alignItems: 'center' }}>
+    <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/minesweeper-1616681-1377688.png?f=webp&w=256" alt="AI Powered Minesweeper icon" style={{ width: '20px', height: '20px', marginRight: '10px' }} />
+    AI Powered Minesweeper
+  </div>
+}>
+  <p style={{ fontSize: '13px', margin: '0', padding: 4 }}>
+    Designed an AI agent and a completely functional game of Minesweeper. AI agent is capable of autonomously playing Minesweeper using inference and constraint rules without any human input
+  </p>
+  <br />
+</ExpandableSection>
+
+<ExpandableSection org={
+  <div style={{ display: 'flex', alignItems: 'center' }}>
+    <img src="https://img.icons8.com/?size=100&id=KgWXEuIORpk7&format=png&color=000000" alt="navigator" style={{ width: '20px', height: '20px', marginRight: '10px' }} />
+    Navigator
+  </div>
+}>
+  <p style={{ fontSize: '13px', margin: '0', padding: 4 }}>
+  Designed an AI agent that is capable of navigating a 2D grid world using a combination of A* search and reinforcement learning. 
+      The agent is capable of learning from its environment and making decisions based on its observations
+  </p>
+  <br />
+</ExpandableSection>
 
   </div>
-  <div style={{
-
-  }}>
-
-    <br />
-    <br />
-  <table style= {{width:"100%", borderCollapse: 'collapse'}}>
-
-    <tr class='tr-hover-class projectBorderBottom' style={{borderBottom: "1px solid #eee"}}
-   onClick={() => { 
-    window.open("https://github.com/rizhkh/mswp", "_blank")
-  } }
-    >          
-        <td style={{padding: 10}}>AI powered Minesweeper</td> 
-        <td style={{padding: 10}}>                          
-          <div class="label label-System" >A.I.</div>
-          <div class="label label-System">Python</div>
-        </td>
-    </tr>
-
-    <tr class='tr-hover-class' style={{borderBottom: "1px solid #eee"}}
-       onClick={() => { 
-        window.open("https://github.com/rizhkh/Image-Classifier", "_blank")
-        } }>            
-        <td style={{padding: 10}}>
-        Image Classifier
-        </td> 
-        <td style={{padding: 10}}>                          
-        <div class="label label-System" >A.I.</div>
-        <div class="label label-System" >ML & Data</div>
-        <div class="label label-System">Python (numpy & scikit)</div>
-        </td>
-    </tr>
-
-    <tr class='tr-hover-class' style={{borderBottom: "1px solid #eee"}}
-       onClick={() => { 
-        window.open("https://github.com/rizhkh/mazesearch", "_blank")
-        } }>            
-        <td style={{padding: 10}}>Navigator</td> 
-        <td style={{padding: 10}}>                          
-        <div class="label label-System">Python</div>
-        </td>
-    </tr>
-
-    <tr class='tr-hover-class' style={{borderBottom: "1px solid #eee"}}
-       onClick={() => { 
-        window.open("https://github.com/rizhkh/Map-search-Trajectory-plan", "_blank")
-        } }>           
-        <td style={{padding: 10}}>Search (Map)</td> 
-        <td style={{padding: 10}}>                          
-        <div class="label label-System">Java & Java Swing</div>
-        </td>
-    </tr>
-
-    <tr class='tr-hover-class' style={{borderBottom: "1px solid #eee"}}
-       onClick={() => { 
-        window.open("https://github.com/rizhkh/Socket-programming-Client", "_blank")
-        } }>             
-        <td style={{padding: 10}}>Peer2Peer sharing utility</td> 
-        <td style={{padding: 10}}>                          
-        <div class="label label-System">Java</div>
-        <div class="label label-System">Python & PyNaCL</div>
-        </td>
-    </tr>
-
-    <tr class='tr-hover-class' style={{borderBottom: "1px solid #eee"}}
-       onClick={() => { 
-        window.open("https://github.com/rizhkh/GameOfChess", "_blank")
-        } }>             
-        <td style={{padding: 10}}>Chess</td> 
-        <td style={{padding: 10}}>                          
-        <div class="label label-System" >Chess</div>
-        <div class="label label-System">JavaFX</div>
-        <div class="label label-System">Android</div>
-        <div class="label label-System">Gradle</div>
-        </td>
-    </tr>
-
-    <tr class='tr-hover-class' style={{borderBottom: "1px solid #eee"}}
-       onClick={() => { 
-        window.open("https://github.com/rizhkh/MusicSongPlaylist", "_blank") 
-        } }>              
-        <td style={{padding: 10}}>Music Player</td> 
-        <td style={{padding: 10}}>                          
-        <div class="label label-System">JavaFX</div>
-        <div class="label label-System">JSyn</div>
-        </td>
-    </tr>
-
-    <tr class='tr-hover-class' style={{borderBottom: "1px solid #eee"}}
-       onClick={() => { 
-        window.open("https://github.com/rizhkh/System-Utility-Malloc-free", "_blank")
-        } }>             
-        <td style={{padding: 10}}>System Utilities</td> 
-        <td style={{padding: 10}}>                          
-        <div class="label label-System">C Language</div>
-        </td>
-    </tr>
-
-    <tr class='tr-hover-class' style={{borderBottom: "1px solid #eee"}}
-       onClick={() => { 
-        window.open("https://github.com/rizhkh/PhotoAlbum", "_blank")
-        } }>             
-        <td style={{padding: 10}}>Photo Viewer (Photo Storage platform included)</td> 
-        <td style={{padding: 10}}>                          
-        <div class="label label-System">Java</div>
-        <div class="label label-System">JavaScript</div>
-        </td>
-    </tr>
-
-  </table>
-
-  </div>
-  </>
+  </>;
 }

@@ -281,6 +281,18 @@ a.linkProj:hover {
 }
 
 
+.label.label-ipk {
+  font-family: 'Lato', sans-serif;
+  background-color: #e5e5e4;
+
+  /* font-family: 'Roboto', sans-serif; */
+  font-size: 10px;
+  color: #919191;
+
+  border: 0.8px solid #919191;
+}
+
+
 .label.label-System {
   font-family: 'Lato', sans-serif;
   /* font-family: 'Roboto', sans-serif; */
@@ -325,4 +337,40 @@ a.linkProj:hover {
   margin: 0 0 20px;
   width: 100%;
   color: #333;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center the container horizontally */
+  padding: 20px; /* Add some padding around the container */
+}
+
+.project-box {
+  flex: 1 1 45%; /* Adjusted to ensure two boxes per row with some gap */
+  max-width: 45%; /* Ensures the boxes don't exceed 45% of the container width */
+  border: 1px solid #eee;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-sizing: border-box; /* Ensures padding and border are included in the width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow */
+  border-radius: 15px; /* Make the border more rounded */
+}
+
+.project-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.project-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.project-labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
 }

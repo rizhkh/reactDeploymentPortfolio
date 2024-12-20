@@ -50,3 +50,35 @@
   display: inline;
   color: white;
 }
+
+
+.cool-effect {
+
+    position: relative;
+    display: inline-block;
+    color: #000;
+    transition: color 0.3s ease;
+  }
+  
+  .cool-effect::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #565957;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+  }
+  
+  .cool-effect:hover {
+    color: #565957; /* Change color on hover */
+  }
+  
+  .cool-effect:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    
+  }
