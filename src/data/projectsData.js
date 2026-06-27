@@ -12,7 +12,7 @@ const projects = [
     type: "ml",
     link: "https://github.com/rizhkh/quant-edge",
     labels: ["Python", "ML", "Finance"],
-    description: "Quantitative stock forecasting system using analog pattern matching (KNN) and ML models — XGBoost, LightGBM, and Random Forest with quantile regression — to generate price ranges and direction signals",
+    description: "Quantitative stock forecasting system using analog pattern matching (KNN) and ML models to forecast price ranges and direction signals",
     emoji: "📈"
   },
   {

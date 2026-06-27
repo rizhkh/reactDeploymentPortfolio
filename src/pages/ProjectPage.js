@@ -1,79 +1,94 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import projects from '../data/projectsData';
 import '../css/styles.css';
 import '../css/stylesforproject.css';
-import '../css/hovereffect.css';
 
-const FILTERS = [
-  { label: 'All',       value: 'all' },
-  { label: 'Software',  value: 'software' },
-  { label: 'ML & AI',   value: 'ml' },
-];
+const mlProjects = projects.filter(p => p.type === 'ml');
+const softwareProjects = projects.filter(p => p.type === 'software');
+
+function ProjectCard({ project }) {
+  return (
+    <div
+      onClick={() => window.open(project.link, '_blank')}
+      style={{
+        background: '#fff',
+        border: '1px solid #e7e7e7',
+        borderRadius: '10px',
+        padding: '16px',
+        cursor: 'pointer',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '8px',
+        transition: 'box-shadow 0.2s, transform 0.2s',
+      }}
+      onMouseEnter={e => {
+        e.currentTarget.style.boxShadow = '0 4px 16px rgba(0,0,0,0.1)';
+        e.currentTarget.style.transform = 'translateY(-2px)';
+      }}
+      onMouseLeave={e => {
+        e.currentTarget.style.boxShadow = 'none';
+        e.currentTarget.style.transform = 'translateY(0)';
+      }}
+    >
+      <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
+        {project.emoji
+          ? <span style={{ fontSize: '22px' }}>{project.emoji}</span>
+          : <img src={project.icon} alt="" style={{ width: '24px', height: '24px', objectFit: 'contain' }} />
+        }
+        <span style={{ fontWeight: 700, fontSize: '13px' }}>{project.name}</span>
+      </div>
+      <p style={{ fontSize: '11px', color: '#666', lineHeight: '1.6', margin: 0 }}>
+        {project.description}
+      </p>
+      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4px', marginTop: 'auto' }}>
+        {project.labels.map((l, j) => (
+          <span key={j} style={{
+            fontSize: '10px', color: '#266ea0', background: '#BADBF2',
+            border: '0.8px solid #5599CA', borderRadius: '3px', padding: '2px 6px'
+          }}>{l}</span>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function SectionHeading({ title, count }) {
+  return (
+    <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px', marginTop: '32px' }}>
+      <span style={{ fontWeight: 700, fontSize: '14px', color: '#222' }}>{title}</span>
+      <span style={{ fontSize: '11px', color: '#999', background: '#f0f0f0', borderRadius: '10px', padding: '1px 8px' }}>{count}</span>
+      <div style={{ flex: 1, height: '1px', background: '#eee' }} />
+    </div>
+  );
+}
 
 export default function ProjectPage() {
-  const [filter, setFilter] = useState('all');
-  const filtered = filter === 'all' ? projects : projects.filter(p => p.type === filter);
-
   return (
     <>
       <div className="topnav">
-        <div className="topnavlink">
+        <div className="topnavlink" style={{ width: 'auto' }}>
           <div className="linkBox">
-            <Link to="/">Home</Link>
+            <Link to="/" style={{ textDecoration: 'none', color: '#333', fontSize: '13px' }}>Home</Link>
           </div>
         </div>
         <div className="topnavdetail">
           <div className="label label-tab">Projects</div>
         </div>
       </div>
-      <div style={{ padding: '20px' }}>
-        <div style={{ display: 'flex', gap: '8px', marginBottom: '16px' }}>
-          {FILTERS.map(f => (
-            <button
-              key={f.value}
-              onClick={() => setFilter(f.value)}
-              style={{
-                padding: '4px 12px',
-                fontSize: '12px',
-                border: '1px solid #ccc',
-                borderRadius: '4px',
-                cursor: 'pointer',
-                background: filter === f.value ? '#565957' : 'transparent',
-                color: filter === f.value ? '#fff' : '#565957',
-                transition: 'background 0.15s, color 0.15s',
-              }}
-            >
-              {f.label}
-            </button>
-          ))}
+
+      <div style={{ padding: '40px 24px 40px', maxWidth: '860px', margin: '0 auto' }}>
+
+        <SectionHeading title="ML & AI" count={mlProjects.length} />
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '14px' }}>
+          {mlProjects.map((p, i) => <ProjectCard key={i} project={p} />)}
         </div>
-        <div className="projects-container">
-          {filtered.map((project, index) => (
-            <div className="project-box" key={index} onClick={() => window.open(project.link, "_blank")}>
-              <div className="project-title">
-                {project.emoji && (
-                  <span style={{ fontSize: '28px', marginRight: '10px', verticalAlign: 'middle', lineHeight: 1 }}>{project.emoji}</span>
-                )}
-                {!project.emoji && project.icon && (
-                  <img src={project.icon} alt={`${project.name} icon`} style={{ width: '40px', height: '40px', marginRight: '10px', verticalAlign: 'middle' }} />
-                )}
-                {project.name}
-              </div>
-              {project.result && (
-                <div style={{ fontSize: '11px', color: '#2e7d32', fontWeight: '600', margin: '4px 0' }}>
-                  {project.result}
-                </div>
-              )}
-              <div className="project-description" style={{ fontSize: '12px' }}>{project.description}</div>
-              <div className="project-labels">
-                {project.labels.map((label, idx) => (
-                  <div className="label label-System" key={idx}>{label}</div>
-                ))}
-              </div>
-            </div>
-          ))}
+
+        <SectionHeading title="Software" count={softwareProjects.length} />
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(260px, 1fr))', gap: '14px' }}>
+          {softwareProjects.map((p, i) => <ProjectCard key={i} project={p} />)}
         </div>
+
       </div>
     </>
   );
