@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @import url('https://fonts.googleapis.com/css2?family=Cuprum&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');

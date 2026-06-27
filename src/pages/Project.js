@@ -54,12 +54,24 @@ const ExpandableSection = ({ org, pos, colorway, children }) => {
 
   <ExpandableSection org={
   <div style={{ display: 'flex', alignItems: 'center' }}>
-    <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/minesweeper-1616681-1377688.png?f=webp&w=256" alt="AI Powered Minesweeper icon" style={{ width: '20px', height: '20px', marginRight: '10px' }} />
-    AI Powered Minesweeper
+    <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/minesweeper-1616681-1377688.png?f=webp&w=256" alt="Minesweeper AI Agent icon" style={{ width: '20px', height: '20px', marginRight: '10px' }} />
+    Autonomous Minesweeper Agent
   </div>
 }>
   <p style={{ fontSize: '13px', margin: '0', padding: 4 }}>
-    Designed an AI agent and a completely functional game of Minesweeper. AI agent is capable of autonomously playing Minesweeper using inference and constraint rules without any human input
+    Autonomous Minesweeper agent using propositional logic inference, deterministic constraint rules, and probabilistic tracking to execute optimal, risk-mitigated moves without any human input.
+  </p>
+  <br />
+</ExpandableSection>
+
+  <ExpandableSection org={
+  <div style={{ display: 'flex', alignItems: 'center' }}>
+    <span style={{ fontSize: '20px', marginRight: '10px', lineHeight: 1 }}>📈</span>
+    Quantitative Forecasting Engine
+  </div>
+}>
+  <p style={{ fontSize: '13px', margin: '0', padding: 4 }}>
+    Quantitative stock forecasting system using analog pattern matching (KNN) and ML models — XGBoost, LightGBM, and Random Forest with quantile regression to generate price ranges and direction signals.
   </p>
   <br />
 </ExpandableSection>

@@ -1,0 +1,86 @@
+==================================================
+  How to run this React portfolio locally
+==================================================
+
+Prerequisites
+-------------
+- Node.js (v16 or newer recommended). Check with:
+    node -v
+- npm comes bundled with Node.js. Check with:
+    npm -v
+
+If you don't have Node installed, download from:
+    https://nodejs.org/
+
+
+Step 1 — Open a terminal in the project folder
+----------------------------------------------
+Open PowerShell (or any terminal) and navigate to the
+project directory:
+
+    cd "c:\Users\mrk_r\OneDrive\Desktop\webb\reactdeploy\reactDeploymentPortfolio"
+
+
+Step 2 — Install dependencies (first time only)
+-----------------------------------------------
+Run this once after cloning, or whenever package.json changes:
+
+    npm install
+
+This creates the node_modules folder. It can take a few minutes.
+
+
+Step 3 — Start the dev server
+-----------------------------
+    npm start
+
+This will:
+  - Compile the app
+  - Open http://localhost:3000 in your default browser
+  - Watch for file changes and hot-reload automatically
+
+If port 3000 is busy, it will prompt to use another port — press Y.
+
+To stop the server: press Ctrl + C in the terminal.
+
+
+==================================================
+  Project routes (after npm start)
+==================================================
+
+  http://localhost:3000/                          -> Home
+  http://localhost:3000/project_page              -> Current projects page
+  http://localhost:3000/project_page/timeline     -> Timeline layout (preview)
+  http://localhost:3000/project_page/tiles        -> Compact tile grid (preview)
+  http://localhost:3000/project_page/filterable   -> Filter chips + grid (preview)
+  http://localhost:3000/project_page/magazine     -> Hero card + grid (preview)
+
+
+==================================================
+  Other useful npm scripts
+==================================================
+
+  npm run build    -> Production build into ./build
+  npm test         -> Run the Jest test runner
+  npm run deploy   -> Publish ./build to GitHub Pages (gh-pages)
+
+
+==================================================
+  Troubleshooting
+==================================================
+
+- "'npm' is not recognized" -> Install Node.js, then reopen terminal.
+
+- npm install fails on Windows -> Try:
+    npm cache clean --force
+    rmdir /s /q node_modules
+    del package-lock.json
+    npm install
+
+- Port 3000 already in use -> Run on a different port:
+    PowerShell:  $env:PORT=3001; npm start
+    Cmd:         set PORT=3001 && npm start
+
+- Blank page / routing 404 on refresh -> The dev server should handle
+  this automatically. If deployed to GitHub Pages, make sure the
+  homepage field in package.json and the CNAME file are correct.
