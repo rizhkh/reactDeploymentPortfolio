@@ -19,7 +19,7 @@ const SERVICES = [
   {
     title: "Full-Stack",
     icon: "🖥️",
-    description: "End-to-end systems from data pipelines to analytics, real-time monitorin platforms",
+    description: "End-to-end systems from data pipelines to analytics, real-time monitoring platforms",
     tags: ["backend", "frontend-UI", "microservices", "developer-tooling", "database","pipelines","analytics"]
   },
   {
