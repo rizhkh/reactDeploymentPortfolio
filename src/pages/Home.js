@@ -63,17 +63,20 @@ export default function Home() {
       <hr style={{ border: 'none', color: 'transparent', backgroundColor: 'transparent' }} />
 
       <div id="skills" style={{ scrollMarginTop: '40px', width: '100%' }}>
-        <b>Skills</b>
-        <br />
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
+          <span style={{ fontWeight: 700, fontSize: '14px', color: '#222' }}>Skills</span>
+          <div style={{ flex: 1, height: '1px', background: '#eee' }} />
+        </div>
         <SkillsDisplay />
         <br />
         <br />
       </div>
 
       <div id="services" style={{ scrollMarginTop: '40px', width: '100%' }}>
-        <b>What I Do</b>
-        <br />
-        <br />
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
+          <span style={{ fontWeight: 700, fontSize: '14px', color: '#222' }}>What I Do</span>
+          <div style={{ flex: 1, height: '1px', background: '#eee' }} />
+        </div>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '16px' }}>
           {SERVICES.map((s) => (
             <div key={s.title} style={{
@@ -102,8 +105,10 @@ export default function Home() {
       </div>
 
       <div id="projects" style={{ scrollMarginTop: '40px', width: '100%' }}>
-        <b>Projects</b>
-        <br />
+        <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '16px' }}>
+          <span style={{ fontWeight: 700, fontSize: '14px', color: '#222' }}>Projects</span>
+          <div style={{ flex: 1, height: '1px', background: '#eee' }} />
+        </div>
         <Project />
         <br />
         Click{' '}
